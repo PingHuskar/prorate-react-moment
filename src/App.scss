@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: #333;
+  color: #ccc;
+}
+.App {
+  @extend body;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 4em;
+  &#prorate {
+    content: ' %';
+  }
+}
+h3 {
+  font-size: 3em;
+}
+p {
+  user-select: initial;
+}
